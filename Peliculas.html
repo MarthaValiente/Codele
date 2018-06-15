@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Películas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<meta name="Description" content="medilab es un sitio que encontrará contenido relevante a servicios médicos, laboratorios, doctores generales y con especialidades,servicios de emergencia.">
+	<meta name="Keywords" content="universal, entretenimiento, pop-colture, farandula, series, películas, libros, musica, tendencias">
+</head>
+
+<header>
+<div class="container">
+	     <img src="img/univer.png" class="img-responsive" alt="logotipo universal" width="100px">
+	      <nav class="navbar navbar-default">
+              <div class="container">
+              
+   <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a class="navbar-brand" href="index.html">
+					</a>
+                </div>
+                
+  <div class="collapse navbar-collapse" id="nav">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">TV</a></li>
+                        <li class="active"><a href="#">Películas</a></li>
+                        <li><a href="#">Música</a></li>
+                        <li><a href="#">Pop Colture</a></li>
+					  	  <li><a href="#">Contact</a></li> 
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Nosotros <span class="caret"></span></a>
+                        	<ul class="dropdown-menu">
+                            	<li><a href="#">Acerca de</a></li>
+                                <li><a href="#">Quienes Somos</a></li>
+                            </ul>
+                        </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+		</div>
+           
+    <script src="js/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+<script src="js/gmaps.js"></script>
+<script>
+$(function () {
+	
+	$(window).load(function(){
+		mostrarMapa();
+	});
+
+	function mostrarMapa(){
+		var map;
+		var mLat = 14.048399; //latitud
+		var mLng = -87.174078; //longitud
+
+		map = new GMaps({
+			div: '#map', //id del <div> donde se mostrará el mapa.
+			lat: mLat,
+			lng: mLng,
+			zoom: 18
+		  });
+		map.addMarker({
+		  lat: mLat,
+		  lng: mLng,
+		  title: 'Nuestra ubicación en gMaps',
+		  infoWindow: {
+			content: '<p>UNITEC - Univ. Tecnológica de Honduras</p>'
+		  }
+		});	
+		
+	}
+});
+</script>
+	</header> 
+    
+     <section id="sec-slides">
+	
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/27469.jpg" alt="banner">
+				
+				<div class="carousel-caption">
+					<h1>Oceans Eight</h1>
+					<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+
+					<p class="hidden-xs"><a href="#" class="btn btn-info btn-pelis">Ver más</a></p>
+					
+				</div>
+            </div>
+ 
+  <div class="item">
+                <img src="img/28253.jpg" alt="banner">
+				<div class="carousel-caption">
+					<h2>Creed 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+            </div>
+
+            <div class="item">
+                <img src="img/bg-banner.jpg" alt="banner">
+				<div class="carousel-caption">
+					
+					<h2>Información Tercer Slide</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+            </div>
+
+        </div>
+
+        <!-- Carousel controls -->
+
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+</section>
+	 <hr>    
+  <section id="sec-pelis">
+		<div class="container">
+			<div class="row">
+				<article class="col-md-4 col-sm-12 col-xs-12">
+					<h2 class="titulo">Películas</h2>
+				</article>
+
+				<article class="col-md-4 col-sm-12 col-xs-12">
+					<img src="img/The_Incredibles.jpg" class="img-responsive center-block">
+					<h3>Los Increíbles II</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					
+					<img src="img/Animales fantásticos y dónde encontrarlos04.jpg" class="img-responsive center-block">
+					<h3>Animales Fantásticos, la secuela</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</article>
+				
+				<article class="col-md-4 col-sm-16 col-xs-12">
+					<img src="img/jurassic-world.jpg" class="img-responsive center-block">
+					<h3>Jurassic World: The Fallen Kingdom</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					
+					<img src="img/tombraider2018pelicularesena.jpg" class="img-responsive center-block">
+					<h3>Tomb Raider</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</article>
+				
+			</div>			
+		</div>
+	
+	</section>
+<body>
+<footer>
+	<img src="img/logo codele.png" alt="logo" class="center-block" width="110px"> 
+	<section id="sec-info">
+			<div class="container">
+				<div class="row">
+				
+					<article class="col-md-3 col-md-12 col-md-12">
+						<img src="img/univer.png" class="img-responsive" width="220px">
+						
+					</article>
+					
+					<article class="col-md-3 col-md-12 col-md-12">
+						<h3><strong>COMPAÑÍA</strong></h3>
+						<ul>
+							<li> Lorem Ipsum</li>
+							<li> Historia</li>
+							<li> Equipo</li>
+							<li><a href="#"> Forma Parte</a></li>
+						</ul>	
+					</article>
+					
+					<article class="col-md-3 col-md-12 col-md-12">
+						<h3><strong>INFORMACIÓN</strong></h3>
+						<ul>
+							<li> Lorem Ipsum</li>
+							<li> Historia</li>
+							<li> Equipo</li>
+							<li> Colaboradores</li>
+						</ul>	
+					</article>
+					
+					<article class="col-md-3 col-md-12 col-md-12">
+						<h3><strong>EDICIÓN</strong></h3>
+						<ul>
+							<li> Lorem Ipsum</li>
+							<li> Historia</li>
+							<li> Equipo</li>
+							<li> Colaboradores</li>
+						</ul>	
+					</article>
+				</div>
+			</div>
+		</section>
+</footer>	
+
+ <foot> 
+<div class="container">
+			
+			<p>Copyright &copy; 2018 - <span class="nombre">Laura Castro - Perla Sierra - Martha Valiente</span> </p>
+		</div>
+		</foot> 
+</body>
+</html>
